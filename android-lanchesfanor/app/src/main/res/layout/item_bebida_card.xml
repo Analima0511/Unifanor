@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="150dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center" >
+            <ImageView
+                android:id="@+id/imgProdutoCard"
+                android:contentDescription="Img teste"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cocacola_350ml" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtNomeBebidaCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Nome Bebida" />
+
+            <TextView
+                android:id="@+id/txtDescricaoBebidaCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:maxLines="3"
+                android:textSize="18sp"
+                tools:text="Lorem ipsum dolor, lorem ipsum dolor, lorem ipsum dolor, lorem ipsum dolor, lorem ipsum dolor, lorem ipsum dolor" />
+
+            <TextView
+                android:id="@+id/txtEmbalagemBebidaCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:maxLines="1"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Embalagem 300ml" />
+
+            <TextView
+                android:id="@+id/txtPrecoBebidaCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:maxLines="1"
+                android:textSize="28sp"
+                tools:text="R$ 99,99" />
+
+            <Button
+                android:id="@+id/btnEscolherBebida"
+                android:layout_width="100dp"
+                android:background="@color/VerdeOutro"
+                android:textColor="#fff"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+
+                android:text="Escolher"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
